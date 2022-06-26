@@ -8,7 +8,11 @@ from sqlalchemy import create_engine, func, MetaData, inspect, Table
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///Database/db/earthquake_db")
+pw = input("Enter password: ")
+##if using sqlite
+# engine = create_engine("sqlite:///Database/db/earthquake_db")
+##if using postgresql
+engine = create_engine('postgresql+psycopg2://postgres:'+pw+'@localhost/earthquake_db')
 
 metadata_obj = MetaData()
 metadata_obj.reflect(bind=engine)

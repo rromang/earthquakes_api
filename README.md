@@ -47,7 +47,7 @@
 
 ![Screen Shot 2022-06-26 at 1 08 42 PM](https://user-images.githubusercontent.com/80008461/175832078-06eb128d-4a57-487e-9b02-b30b0bc334cf.png)
 
-9. Update database to remove duplicates by replacing the table. (Note: A duplicated table should be created in the database before any replacing in case something catastrophic happens. However, I chose to keep a backup as a csv file.)
+9. Update database to remove duplicates by replacing the table. (Note: A duplicated table should be created in the database before any replacing in case something catastrophic happens. However, I chose to keep a backup as a csv file.) (Note: After data base is updated in jupyter notebook. Open SQLite studio an update the primary key, if using sqlite and/or make sure the id column is used as a primary key in pgadmin)
 
 ![Screen Shot 2022-06-26 at 1 10 11 PM](https://user-images.githubusercontent.com/80008461/175832169-977631cc-9d95-43fc-9e9d-5a279f874951.png)
 ![Screen Shot 2022-06-26 at 1 13 59 PM](https://user-images.githubusercontent.com/80008461/175832214-d09ceaf3-3c5d-44dc-baa6-7cf958d3691a.png)

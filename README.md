@@ -13,6 +13,7 @@
 
 ### Steps:
 
-1. Import the necessary dependencies. 
+1. Import the necessary dependencies.
+
 2. Database were created ahead of time for a different project. Connect to the databases and access the data.
 3. 

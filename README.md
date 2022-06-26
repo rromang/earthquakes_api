@@ -1,7 +1,7 @@
 # API for Earthquake Information
 
 ## Main idea:
-> While working for one of the final projects for the Data Analytics Bootcamp last year, my teammates and I  encountered that some of the datasets available were not as large as we would've like. We chose our project to be related to earthquakes. The main reason: the USGS has readily available data from their website. However, when wanting to download data, it is basically limited to about 2 months worth of data, if wanting to include events with very low magnitude. I decided to test how to create and deply an API that was updated regularly with the monthly data from USGS.
+> While working for one of the final projects for the Data Analytics Bootcamp last year, my teammates and I  encountered that some of the datasets available were not as large as we would've like. We chose our project to be related to earthquakes. The main reason: the USGS has readily available data from their website. However, when wanting to download data, it is basically limited to about 2 months worth of data, if wanting to include events with very low magnitude. I decided to test how to create and deply an API that was updated somewhat regularly with the monthly data from USGS.
 
 
 ### Objectives:

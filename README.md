@@ -39,5 +39,19 @@
 
 ![Screen Shot 2022-06-26 at 12 29 00 PM](https://user-images.githubusercontent.com/80008461/175830772-632c7521-9fc3-41fa-87c8-6de337839cc1.png)
 
-7. 
+7. Since the USGS given id is unique it can be used to double check duplicate values.
+
+![Screen Shot 2022-06-26 at 1 04 14 PM](https://user-images.githubusercontent.com/80008461/175832046-d8c68944-fec1-4206-af68-605664806a21.png)
+
+8. Drop any duplicates found.
+
+![Screen Shot 2022-06-26 at 1 08 42 PM](https://user-images.githubusercontent.com/80008461/175832078-06eb128d-4a57-487e-9b02-b30b0bc334cf.png)
+
+9. Update database to remove duplicates by replacing the table. (Note: A duplicated table should be created in the database before any replacing in case something catastrophic happens. However, I chose to keep a backup as a csv file.)
+
+![Screen Shot 2022-06-26 at 1 10 11 PM](https://user-images.githubusercontent.com/80008461/175832169-977631cc-9d95-43fc-9e9d-5a279f874951.png)
+![Screen Shot 2022-06-26 at 1 13 59 PM](https://user-images.githubusercontent.com/80008461/175832214-d09ceaf3-3c5d-44dc-baa6-7cf958d3691a.png)
+![Screen Shot 2022-06-26 at 1 14 08 PM](https://user-images.githubusercontent.com/80008461/175832217-b55479c5-df5d-4633-bdfa-9e0f231aa8c4.png)
+
+10. 
 

@@ -61,6 +61,6 @@ for time, mag, lat, lon, depth, magType, nst, gap, dmin, rms, net, id_equake, up
     all_earthquakes.append(equake_dict)
 
     # data_equakes = json.dumps(all_earthquakes)
-    out_file = open("Database/json/earthquake_update.json", "w")
+    out_file = open("Database/json/new_earthquake_update.json", "w")
     json.dump(all_earthquakes, out_file, indent = 6) 
-    out_file.close()  
+    out_file.close()

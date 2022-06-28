@@ -16,7 +16,7 @@ engine = create_engine('postgresql+psycopg2://postgres:'+pw+'@localhost/earthqua
 
 metadata_obj = MetaData()
 metadata_obj.reflect(bind=engine)
-# Earthquakes = metadata_obj.tables['earthquake_raw']
+# connect to db table with only the monthly data
 earthquakes = Table('earthquake_update', metadata_obj, autoload_with=engine)
 columns = [c.name for c in earthquakes.columns]
 # print(columns)
@@ -60,7 +60,7 @@ for time, mag, lat, lon, depth, magType, nst, gap, dmin, rms, net, id_equake, up
     equake_dict['updated'] = updated
     all_earthquakes.append(equake_dict)
 
-    # data_equakes = json.dumps(all_earthquakes)
-    out_file = open("Database/json/new_earthquake_update.json", "w")
+    # create a new json file out of the db table
+    out_file = open("Database/json/earthquake_update.json", "w")
     json.dump(all_earthquakes, out_file, indent = 6) 
     out_file.close()

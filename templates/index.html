@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio (HomePage)</title>
+    <!-- Bootstrap -->
+  <link href="../static/css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+       <a class="navbar-brand" href="#"><img src="../static/images/logo.jpg" width="80" height="82" alt=""/></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <a class="nav-link" href="#" id="home">HOME <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="{{ url_for('earthquakes') }}" id="earthquakes">Earthquakes API</a>
+             </li>
+			 <!-- <li class="nav-item">
+                <a class="nav-link" href="https://flic.kr/ps/3y7UMF" id="hobby">Amateur<br>Photography</a>
+             </li> -->
+			 <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/rosaicelarg" id="linkedin"><img src="../static/images/LI-In-Bug.png" width="64" height="55" alt="linkedin"/></a>
+             </li>
+			 <li class="nav-item">
+                <a class="nav-link" href="https://github.com/rromang" id="github"><img src="../static/images/GitHub-Mark-Light-32px.png" width="49" height="47" alt="github"/></a>
+             </li>
+          </ul>
+       </div>
+    </nav>
+    <section>
+   <div class="jumbotron jumbotron-fluid text-center">		  
+      <h1 class="display-4" id="title-equake-api">Earthquake API</h1>
+
+     <p class="hor-line"><img src="../static/images/Rectangle_4.png" width="892" height="14" alt=""/></p>
+       <p id="hero-text1">Objectives:</p>
+       <p class="lead">
+		   <div class="container" id="hero-text">
+		   <ul>
+			   <li>Obtain the information from:<a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes">USGS Hazards Program</a></li>
+			   <li>Place the information collected as part of a database to be accessed for data exploration, data visualization,training the model(s), etc.</li>
+			   <li>Create and deploy an API with the information.</li>
+			   <li>Regularly maintain the database and the API by updating and adding the new earthquake information so the dataset is relatively large.</li>
+	   </ul>
+		</div>
+       </p>
+		 <p class="hor-line"><img src="../static/images/Rectangle_4.png" width="892" height="14" alt=""/></p>
+		       <p class="lead">
+          <a class="btn btn-primary btn-lg" href="{{ url_for('earthquakes') }}" role="button" id="api-btn">EARTHQUAKE API</a>
+       </p>
+    </div>
+    </section>
+
+    <footer class="text-center" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p id="copy">Copyright © R. Roman. All rights reserved.</p>
+			<p id="date"><script>
+    			var today = new Date; document.getElementById('date').innerHTML= today.toDateString();</script>
+             </p> 
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
